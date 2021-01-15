@@ -1,126 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Taco Cat | Home</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/custom.css" />
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-sm navbar-dark"
-      style="background-color: #f28705"
-    >
-      <a class="navbar-brand" href="#">Taco Cat</a>
-      <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      ></button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="/index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/solve.html">Solve </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/code.html">Code</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdownId"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Source</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a
-                class="dropdown-item"
-                href="https://github.com/johndavid25/tacoCat"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                class="dropdown-item"
-                href="https://johndevportfolio.netlify.app"
-                target="_blank"
-                >Portfolio</a
-              >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Taco Cat</title>
+        <link rel="icon" type="image/x-icon" href="/img/tacoIcon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/prism.css">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="/img/tacoIcon.png" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Description</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Solve</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Code</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Source</a></li>
+                    </ul>
+                </div>
             </div>
-          </li>
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            placeholder="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form> -->
-      </div>
-    </nav>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">The Palindrome Algorithim!</div>
+                <div class="masthead-heading text-uppercase">Taco Cat</div>
+                <a class="btn btn-success btn-xl text-uppercase js-scroll-trigger" href="#services">Get Started</a>
+            </div>
+        </header>
+        <!-- Description-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">The Palindrome Algorithim</h2>
+                    <h3 class="section-subheading text-muted">The TACOCAT coding challenge is based on the more traditional “reverse a string” exercise,
+                        but ultimately determines if a word or phrase is a palindrome. This challenge will check a word, line, verse, sentence, etc.,
+                        reading the same backward as forward <br><br>
+                        This program was made using JavaScript, HTML, CSS, and Bootstrap 4.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-js-square fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">JavaScript</h4>
+                    </div>
+                    <div class="col">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-html5 fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">HTML</h4>
+                    </div>
+                    <div class="col">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-css3-alt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">CSS</h4>
+                    </div>
+                    <div class="col">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-bootstrap fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Bootstrap 4</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Solve Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Taco Cat Solution</h2>
+                    <h3 class="section-subheading text-muted">Enter a word and click "solution" to check and see if it's a palindrome.</h3>
+                </div>
+                <div class="col" style="text-align: center">
+                    <form>
+                        <input type="text" id="palindrome" placeholder="tacocat" class="form-control-lg"   />
+                      </form>
+                </div><br>
+                <div class="col text-center">
+                    <!-- Button trigger modal -->
+                    <button
+                      id="checkPalindrome"
+                      type="submit"
+                      class="btn btn-lg btn-warning"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                    >
+                      Solution
+                    </button>
+        
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button
+                              type="button"
+                              class="close"
+                              data-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-center">
+                            <h1>Results</h1>
+                            <p>"<span class="mt-5" id="result"></span>"</p>
+                            <p>
+                              <span class="mt-5" id="resultPalindrome"></span>
+                            </p>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              id="btnClear"
+                              type="button"
+                              class="btn"
+                              data-dismiss="modal"
+                              style="background-color: #f20505"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-3">TACO CAT</h1>
-        <p class="lead">WANT TO KNOW IF A WORD IS A PALINDROME</p>
-        <hr class="my-2" />
-        <p class="lead">
-          <a href="/solve.html"
-            ><button
-              type="button"
-              class="btn"
-              style="background-color: #72a603"
-            >
-              Get Started
-            </button>
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/js/custom.js"></script>
-  </body>
+            
+            </div>
+        </section>
+        <!-- Code-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Code</h2>
+                    <h3 class="section-subheading text-muted">Taco Cat JavaScript</h3>
+                </div>
+<pre class="line-numbers">
+    <code class="language-javascript">
+        document.getElementById("checkPalindrome").addEventListener("click", function () {
+            let userInput = document.getElementById("palindrome").value;
+            let oneWord = userInput.toLowerCase().replace(/ /g, "");
+            let newInput = "";
+        
+            
+            for (let index = oneWord.length - 1; index >= 0; index--) {
+              newInput += oneWord[index];
+            }
+            if (newInput == "") {
+                document.getElementById("resultPalindrome").innerHTML = `Please enter a word.`;
+            } else if (oneWord == newInput) {
+                document.getElementById("resultPalindrome").innerHTML = `YES! This is a palindrome.`;
+            } else {
+                document.getElementById("resultPalindrome").innerHTML = `SORRY, this is not a palindrome.`;
+        
+            }
+            document.getElementById("result").innerHTML = newInput;
+        
+          });
+        
+          document.getElementById("btnClear").addEventListener("click", function(){
+            document.getElementById("palindrome").value = "";
+        });
+        
+    </code>
+</pre>                
+       
+            </div>
+        </section>
+        <!-- Source-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Source</h2>
+                    <h3 class="section-subheading text-muted">Visit my GitHub and Portfolio</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://github.com/johndavid25/tacoCat"target="_blank">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                        <h4 class="my-3">GitHub</h4>
+                    </div>   
+                    <div class="col">
+                        <a href="https://johndevportfolio.netlify.app" target="_blank">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                        <h4 class="my-3">Portfolio</h4>
+                    </div>
+                </div>
+                
+            </div> 
+        </section>
+ 
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">Copyright © John Williams 2021</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="/js/prism.js"></script>
+    </body>
 </html>
